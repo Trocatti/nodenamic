@@ -1,0 +1,24 @@
+.vue-form-wizard {
+  display: flex;
+  flex-direction: column;
+
+  .spinner {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 60px);
+    z-index: 9;
+    background-color: rgba(250, 235, 215, 0.3);
+    overflow: hidden;
+
+    .spin {
+      color: #e74c3c;
+      z-index: 2;
+    }
+  }
+}
+

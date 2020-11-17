@@ -1,0 +1,19 @@
+.button-trash-icon {
+  vertical-align: sub;
+  color: var(--danger);
+}
+.select-line-text {
+  font-size: 0.875rem;
+  color: grey;
+}
+.button-info-icon {
+  &:hover {
+    .info-icon {
+      color: var(--white);
+    }
+  }
+  .info-icon {
+    vertical-align: sub;
+    color: var(--primary);
+  }
+}

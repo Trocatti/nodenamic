@@ -1,0 +1,13 @@
+.restriction option:nth-child(2) {
+  font-weight: bold;
+}
+
+.alignment-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    margin-right: .5rem;
+  }
+}

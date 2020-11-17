@@ -1,0 +1,64 @@
+.vue-form-wizard {
+
+  .wizard-header {
+    padding: 30px 0 20px 0;
+    
+    .wizard-title {
+      font-size: 1.75em;
+    }
+  }
+
+  .wizard-tab-content {
+    padding-top: 20px;
+
+    .del-btn {
+      z-index: 1;
+    }
+  }
+
+  .wizard-card-footer {
+
+    .wizard-btn {
+      min-width: initial;
+      background-color: transparent !important;
+      border: none !important;
+      color: rgb(231, 76, 60) !important;
+
+      &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 20px 20px #a7a7a7;
+      }
+
+    }
+
+    .wizard-footer-left .wizard-btn {
+      @extend %wizard-footer-buttons;
+      left: 0;
+    }
+
+    .wizard-footer-right .wizard-btn {
+      @extend %wizard-footer-buttons;
+      right: 0;
+      margin-right: 10px;
+    }
+
+    .wizard-footer-right .finish-button {
+      color: var(--success) !important;
+    }
+  }
+
+}
+
+%wizard-footer-buttons {
+  position: absolute;
+  top: 55px;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7%;
+  color: var(--white);
+  text-align: center;
+  border-radius: 0;
+}
